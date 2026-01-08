@@ -75,21 +75,7 @@ export default function SponsorsPage() {
             className="sponsor-image"
           />
         </motion.div>
-        {/* <motion.div
-          className="sponsor-image-wrapper"
-          initial={{ opacity: 0, scale: 0.8 }}
-          whileInView={{ opacity: 1, scale: 1 }}
-          whileHover={{ scale: 1.08, rotate: -2 }}
-          whileTap={{ scale: 0.95 }}
-          transition={{ duration: 0.3, delay: 0.1 }}
-          viewport={{ once: false, amount: 0.3 }}
-        >
-          <img
-            src="/assets/images/Group 1000012515.png"
-            alt="Sponsor 2"
-            className="sponsor-image"
-          />
-        </motion.div> */}
+
         <motion.div
           className="sponsor-image-wrapper"
           initial={{ opacity: 0, scale: 0.8 }}
