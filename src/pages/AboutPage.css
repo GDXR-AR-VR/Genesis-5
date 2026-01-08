@@ -1,0 +1,369 @@
+.about-page {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  background: #000;
+  backdrop-filter: blur(17.5px);
+  cursor: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='32' height='32' viewBox='0 0 32 32'%3E%3Cpath fill='%23000' d='M4 4h4v4H4zM8 8h4v4H8zM12 12h4v4h-4zM16 16h4v4h-4zM8 16h4v4H8zM4 20h4v4H4zM12 20h4v4h-4zM16 24h4v4h-4z'/%3E%3Cpath fill='%23fff' d='M8 4h4v4H8zM12 8h4v4h-4zM16 12h4v4h-4zM20 16h4v4h-4zM12 16h4v4h-4zM8 20h4v4H8zM16 20h4v4h-4zM20 24h4v4h-4z'/%3E%3C/svg%3E")
+      0 0,
+    auto;
+}
+
+/* Background */
+.background-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.73;
+  z-index: 0;
+}
+
+.background-image {
+  position: absolute;
+  width: 137.61%;
+  height: 115%;
+  left: -16.03%;
+  top: -5%;
+  object-fit: cover;
+  max-width: none;
+}
+
+.blur-overlay {
+  position: absolute;
+  top: 707.5px;
+  left: 1689.5px;
+  width: 1164px;
+  height: 726px;
+  z-index: 1;
+}
+
+/* Top Navigation Bar */
+.top-nav-bar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 68px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+  z-index: 20;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), transparent);
+}
+
+.nav-separator {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 68px;
+  z-index: 19;
+  pointer-events: none;
+}
+
+.separator-line {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: fill;
+}
+
+.nav-logo {
+  margin-left: 0;
+  display: flex;
+  align-items: center;
+}
+
+.nav-logo .logo-container {
+  background: transparent;
+  border: none;
+  padding: 5px;
+  box-shadow: none;
+  width: 50px;
+  height: 58px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.genesis-icon {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  image-rendering: -webkit-optimize-contrast;
+  image-rendering: crisp-edges;
+}
+
+.nav-title {
+  font-family: "Minecraft", "Press Start 2P", monospace;
+  font-size: 36px;
+  font-weight: 500;
+  color: #4c4c4c;
+  text-align: center;
+  margin: 0;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  text-shadow: 2px 2px 0 rgba(0, 0, 0, 0.3);
+}
+
+.nav-icons {
+  display: flex;
+  gap: 13px;
+  align-items: center;
+}
+
+.icon-button {
+  background: transparent;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.icon-button:hover {
+  transform: scale(1.1);
+}
+
+.icon-button:active {
+  transform: scale(0.95);
+}
+
+.social-icon {
+  width: 27px;
+  height: 27px;
+  object-fit: contain;
+  image-rendering: -webkit-optimize-contrast;
+  image-rendering: crisp-edges;
+}
+
+/* Main Content Box */
+.content-box {
+  position: absolute;
+  top: 124px;
+  left: 109px;
+  width: 1222px;
+  height: 590px;
+  background: #c6c6c6;
+  border: 2px solid #000;
+  box-shadow: inset 2px 2px 0 rgba(255, 246, 246, 0.5),
+    inset -2px -2px 0 rgba(98, 98, 98, 0.5), 4px 4px 0 rgba(0, 0, 0, 0.3);
+  z-index: 10;
+}
+
+.text-container {
+  padding: 35px 50px;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: flex-start;
+}
+
+.about-text {
+  font-family: "Minecraftia", "Press Start 2P", monospace;
+  font-size: 38px;
+  font-weight: 400;
+  line-height: 1.4;
+  color: #000;
+  text-align: justify;
+  letter-spacing: 4.2px;
+  margin: 0;
+  white-space: pre-wrap;
+  max-width: 100%;
+}
+
+/* Player Character */
+.player-character {
+  position: absolute;
+  bottom: 30px;
+  right: 50px;
+  width: 160px;
+  height: 331px;
+  z-index: 15;
+}
+
+.player-image {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  image-rendering: pixelated;
+  image-rendering: -webkit-optimize-contrast;
+  image-rendering: crisp-edges;
+}
+
+/* Responsive Design */
+@media (max-width: 1440px) {
+  .content-box {
+    width: 85%;
+    left: 7.5%;
+    height: auto;
+    min-height: 450px;
+  }
+
+  .about-text {
+    font-size: 32px;
+    letter-spacing: 3.5px;
+    line-height: 1.35;
+  }
+
+  .nav-title {
+    font-size: 28px;
+  }
+
+  .player-character {
+    right: 40px;
+    bottom: 40px;
+    width: 180px;
+    height: 372px;
+  }
+
+  .nav-separator {
+    height: 60px;
+  }
+
+  .nav-logo .logo-container {
+    width: 45px;
+    height: 53px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .content-box {
+    width: 90%;
+    left: 5%;
+    top: 100px;
+    min-height: 400px;
+  }
+
+  .text-container {
+    padding: 25px 35px;
+  }
+
+  .about-text {
+    font-size: 24px;
+    letter-spacing: 2.5px;
+    line-height: 1.4;
+  }
+
+  .nav-title {
+    font-size: 24px;
+  }
+
+  .player-character {
+    width: 140px;
+    height: 290px;
+    right: 25px;
+    bottom: 30px;
+  }
+
+  .nav-separator {
+    height: 55px;
+  }
+
+  .nav-logo .logo-container {
+    width: 40px;
+    height: 48px;
+  }
+}
+
+@media (max-width: 768px) {
+  .about-page {
+    height: 100vh;
+    overflow: hidden;
+  }
+
+  .content-box {
+    width: 95%;
+    left: 2.5%;
+    top: 80px;
+    min-height: 350px;
+  }
+
+  .text-container {
+    padding: 20px 25px;
+  }
+
+  .about-text {
+    font-size: 18px;
+    letter-spacing: 2px;
+    line-height: 1.45;
+  }
+
+  .nav-title {
+    font-size: 18px;
+  }
+
+  .logo-container {
+    width: 35px;
+    height: 40px;
+  }
+
+  .social-icon {
+    width: 22px;
+    height: 22px;
+  }
+
+  .player-character {
+    display: none;
+  }
+
+  .nav-separator {
+    height: 50px;
+  }
+
+  .top-nav-bar {
+    height: 50px;
+  }
+
+  .nav-logo .logo-container {
+    width: 32px;
+    height: 40px;
+    padding: 3px;
+  }
+}
+
+@media (max-width: 480px) {
+  .text-container {
+    padding: 15px 20px;
+  }
+
+  .about-text {
+    font-size: 14px;
+    letter-spacing: 1.5px;
+    line-height: 1.5;
+  }
+
+  .nav-title {
+    font-size: 14px;
+  }
+
+  .content-box {
+    top: 70px;
+  }
+
+  .player-character {
+    display: none;
+  }
+
+  .nav-separator {
+    height: 45px;
+  }
+
+  .top-nav-bar {
+    height: 45px;
+  }
+
+  .nav-logo .logo-container {
+    width: 28px;
+    height: 35px;
+    padding: 2px;
+  }
+}
