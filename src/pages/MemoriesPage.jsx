@@ -39,8 +39,8 @@ export default function MemoriesPage() {
         viewport={{ once: false, amount: 0.2 }}
       >
         <DomeGallery
-          fit={0.5}
-          minRadius={650}
+          fit={0.4}
+          minRadius={500}
           maxVerticalRotationDeg={60}
           segments={24}
           grayscale={false}

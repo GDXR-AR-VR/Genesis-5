@@ -290,9 +290,11 @@ export default function DomeGallery({
     }
   }, []);
 
-  // Start auto-rotation on mount
+  // Start auto-rotation on mount for mobile
   useEffect(() => {
-    startAutoRotate();
+    if (window.innerWidth < 768) {
+      startAutoRotate();
+    }
     return () => stopAutoRotate();
   }, [startAutoRotate, stopAutoRotate]);
 
@@ -350,6 +352,34 @@ export default function DomeGallery({
         movedRef.current = false;
         startRotRef.current = { ...rotationRef.current };
         startPosRef.current = { x: evt.clientX, y: evt.clientY };
+      },
+      onMove: ({ event }) => {
+        if (
+          focusedElRef.current ||
+          draggingRef.current ||
+          window.innerWidth < 768
+        )
+          return;
+        const evt = event;
+        const rect = mainRef.current?.getBoundingClientRect();
+        if (!rect) return;
+        const centerX = rect.left + rect.width / 2;
+        const centerY = rect.top + rect.height / 2;
+        const dx = (evt.clientX - centerX) / (rect.width / 2);
+        const dy = (evt.clientY - centerY) / (rect.height / 2);
+        const nextX = clamp(
+          dy * maxVerticalRotationDeg,
+          -maxVerticalRotationDeg,
+          maxVerticalRotationDeg
+        );
+        const nextY = wrapAngleSigned(dx * 180);
+        if (
+          rotationRef.current.x !== nextX ||
+          rotationRef.current.y !== nextY
+        ) {
+          rotationRef.current = { x: nextX, y: nextY };
+          applyTransform(nextX, nextY);
+        }
       },
       onDrag: ({
         event,

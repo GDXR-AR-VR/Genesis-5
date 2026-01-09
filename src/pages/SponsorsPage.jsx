@@ -70,7 +70,7 @@ export default function SponsorsPage() {
           viewport={{ once: false, amount: 0.3 }}
         >
           <img
-            src="/assets/images/Group 1000012514.png"
+            src="/assets/Group 1000012543.png"
             alt="Sponsor 1"
             className="sponsor-image"
           />
@@ -86,7 +86,7 @@ export default function SponsorsPage() {
           viewport={{ once: false, amount: 0.3 }}
         >
           <img
-            src="/assets/images/Group 1000012517.png"
+            src="/assets/Group 1000012541.png"
             alt="Sponsor 3"
             className="sponsor-image"
           />
