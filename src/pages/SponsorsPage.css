@@ -87,7 +87,7 @@
   left: 50%;
   transform: translate(-50%, -50%);
   font-family: "Minecraftia", sans-serif;
-  font-size: 36px;
+  font-size: 48px;
   font-weight: 400;
   color: #000;
   text-align: center;
@@ -96,6 +96,8 @@
   z-index: 4;
   white-space: nowrap;
   padding: 0 20px;
+  text-shadow: 0 0 20px rgba(255, 255, 255, 0.8),
+    0 0 40px rgba(255, 255, 255, 0.4), 2px 2px 0 rgba(0, 0, 0, 0.5);
 }
 
 /* Sponsors Content */
@@ -103,8 +105,8 @@
   position: relative;
   z-index: 2;
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+  flex-direction: column;
+  justify-content: center;
   align-items: center;
   padding: 150px 0 60px 0;
   gap: 40px;
@@ -127,6 +129,16 @@
     pointer;
   overflow: hidden;
   transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.title-sponsor {
+  height: 500px;
+  max-width: 600px;
+}
+
+.platform-sponsor {
+  height: 300px;
+  max-width: 400px;
 }
 
 .sponsor-image-wrapper::before {
@@ -195,6 +207,16 @@
   text-shadow: 0 0 8px rgba(255, 255, 255, 0.8),
     0 0 16px rgba(255, 255, 255, 0.4);
   animation: glow 2s ease-in-out infinite alternate;
+}
+
+.title-sponsor .sponsor-name {
+  font-size: 32px;
+  text-shadow: 0 0 12px rgba(255, 255, 255, 1),
+    0 0 24px rgba(255, 255, 255, 0.6), 2px 2px 0 rgba(0, 0, 0, 0.5);
+}
+
+.platform-sponsor .sponsor-name {
+  font-size: 20px;
 }
 
 @keyframes glow {
@@ -439,6 +461,14 @@
     height: 180px;
   }
 
+  .title-sponsor {
+    height: 220px;
+  }
+
+  .platform-sponsor {
+    height: 140px;
+  }
+
   .tier-title {
     font-size: 16px;
   }
@@ -490,6 +520,14 @@
     width: 100px;
     height: 70px;
   }
+
+  .title-sponsor {
+    height: 180px;
+  }
+
+  .platform-sponsor {
+    height: 120px;
+  }
 }
 
 @media (max-width: 360px) {
@@ -522,5 +560,13 @@
   .sponsor-card.silver {
     width: 90px;
     height: 60px;
+  }
+
+  .title-sponsor {
+    height: 160px;
+  }
+
+  .platform-sponsor {
+    height: 100px;
   }
 }

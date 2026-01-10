@@ -61,7 +61,7 @@ export default function SponsorsPage() {
         viewport={{ once: false, amount: 0.3 }}
       >
         <motion.div
-          className="sponsor-image-wrapper"
+          className="sponsor-image-wrapper title-sponsor"
           initial={{ opacity: 0, scale: 0.8 }}
           whileInView={{ opacity: 1, scale: 1 }}
           whileHover={{ scale: 1.08, rotate: 2 }}
@@ -86,7 +86,7 @@ export default function SponsorsPage() {
         </motion.div>
 
         <motion.div
-          className="sponsor-image-wrapper"
+          className="sponsor-image-wrapper platform-sponsor"
           initial={{ opacity: 0, scale: 0.8 }}
           whileInView={{ opacity: 1, scale: 1 }}
           whileHover={{ scale: 1.08, rotate: -2 }}
