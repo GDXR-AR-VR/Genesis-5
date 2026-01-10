@@ -55,7 +55,7 @@ export default function Footer() {
         <h2 className="footer-title">Venue</h2>
         <div className="venue-map">
           <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3780.7661234567891!2d73.8725116!3d18.6069264!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2c70090000001%3A0x160a20f3d0273495!2sArmy%20Institute%20of%20Technology!5e0!3m2!1sen!2sin!4v1704365400000!5m2!1sen!2sin"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3780.7661234567891!2d73.8725116!3d18.6069264!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2c70090000001%3A0x160a20f3d0273495!2sArmy%20Institute%20of%20Technology!5e0!3m2!1sen!2sin!4v1704365400000!5m2!1sen!2sin&maptype=satellite"
             width="100%"
             height="100%"
             style={{ border: 0 }}
@@ -99,7 +99,7 @@ export default function Footer() {
         transition={{ duration: 0.8, delay: 0.6 }}
         viewport={{ once: false, amount: 0.3 }}
       >
-        <p className="credits-text">Made with ❤️ by AR-VR Dev Team</p>
+        <p className="credits-text">Made with ❤️ by AR-VR Team</p>
       </motion.div>
     </footer>
   );

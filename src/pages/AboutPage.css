@@ -232,15 +232,14 @@
 .mobile-character {
   display: none;
   position: absolute;
-  bottom: 50px;
-  left: 50%;
-  transform: translateX(-50%);
+  bottom: 20px;
+  left: 20px;
   z-index: 15;
 }
 
 .mobile-character-image {
-  width: 120px;
-  height: 120px;
+  width: 150px;
+  height: 150px;
   object-fit: contain;
   image-rendering: pixelated;
   image-rendering: -webkit-optimize-contrast;
@@ -365,6 +364,8 @@
 
   .mobile-character {
     display: block;
+    bottom: 20px;
+    right: 20px;
   }
 
   .nav-separator {
@@ -408,6 +409,8 @@
 
   .mobile-character {
     display: block;
+    bottom: 20px;
+    right: 20px;
   }
 
   .nav-separator {
