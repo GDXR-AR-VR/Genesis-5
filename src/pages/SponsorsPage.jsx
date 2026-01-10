@@ -69,9 +69,18 @@ export default function SponsorsPage() {
           transition={{ duration: 0.3 }}
           viewport={{ once: false, amount: 0.3 }}
         >
+          <motion.h3
+            className="sponsor-name"
+            initial={{ opacity: 0, y: -10 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5 }}
+            viewport={{ once: false, amount: 0.3 }}
+          >
+            Title Sponsor
+          </motion.h3>
           <img
-            src="/assets/Group 1000012543.png"
-            alt="Sponsor 1"
+            src="/assets/Group 1000012541.png"
+            alt="Game Cloud"
             className="sponsor-image"
           />
         </motion.div>
@@ -85,9 +94,18 @@ export default function SponsorsPage() {
           transition={{ duration: 0.3, delay: 0.2 }}
           viewport={{ once: false, amount: 0.3 }}
         >
+          <motion.h3
+            className="sponsor-name"
+            initial={{ opacity: 0, y: -10 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5, delay: 0.1 }}
+            viewport={{ once: false, amount: 0.3 }}
+          >
+            Platform Sponsor
+          </motion.h3>
           <img
-            src="/assets/Group 1000012541.png"
-            alt="Sponsor 3"
+            src="/assets/Group 1000012543.png"
+            alt="Gamedoora"
             className="sponsor-image"
           />
         </motion.div>
