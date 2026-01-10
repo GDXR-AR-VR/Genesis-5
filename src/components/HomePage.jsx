@@ -2,7 +2,7 @@ import { motion, AnimatePresence } from "framer-motion";
 import { useState } from "react";
 import "./HomePage.css";
 import "../pages/AboutPage.css";
-import CountdownPage from "../pages/CountdownPage";
+// ...existing code...
 import AboutPage from "../pages/AboutPage";
 import TimelinePage from "../pages/TimelinePage";
 import PrizePoolPage from "../pages/PrizePoolPage";
@@ -206,9 +206,7 @@ export default function HomePage() {
       </section>
 
       {/* Countdown Section */}
-      <section id="countdown">
-        <CountdownPage />
-      </section>
+      <section id="countdown">{/* CountdownPage removed */}</section>
 
       {/* About Section */}
       <section id="about">
