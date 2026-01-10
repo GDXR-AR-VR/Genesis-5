@@ -2,6 +2,8 @@ import { motion, AnimatePresence } from "framer-motion";
 import { useState } from "react";
 import "./HomePage.css";
 import "../pages/AboutPage.css";
+import CountdownPage from "../pages/CountdownPage";
+import AboutPage from "../pages/AboutPage";
 import TimelinePage from "../pages/TimelinePage";
 import PrizePoolPage from "../pages/PrizePoolPage";
 import MemoriesPage from "../pages/MemoriesPage";
@@ -11,6 +13,7 @@ import Footer from "./Footer";
 
 const menuItems = [
   { id: "home", label: "HOME" },
+  { id: "countdown", label: "COUNTDOWN" },
   { id: "about", label: "ABOUT US" },
   { id: "timeline", label: "TIMELINE" },
   { id: "prizes", label: "PRIZE POOL" },
@@ -202,80 +205,14 @@ export default function HomePage() {
         </div>
       </section>
 
+      {/* Countdown Section */}
+      <section id="countdown">
+        <CountdownPage />
+      </section>
+
       {/* About Section */}
-      <section id="about" className="about-page">
-        {/* Background Image */}
-        <div className="background-container">
-          <img
-            src="/assets/8d169005389a6a17d38e8e059f24644c 1@3x.png"
-            alt="Background"
-            className="background-image"
-          />
-        </div>
-
-        {/* Decorative blur element */}
-        <div className="blur-overlay"></div>
-
-        {/* White Line Separator */}
-        <motion.div
-          className="nav-separator"
-          initial={{ opacity: 0 }}
-          whileInView={{ opacity: 1 }}
-          transition={{ duration: 0.6 }}
-          viewport={{ once: false, amount: 0.3 }}
-        >
-          <img
-            src="/assets/images/Group 1000012493.png"
-            alt="Separator"
-            className="separator-line"
-          />
-        </motion.div>
-
-        {/* Top Navigation Bar */}
-        <motion.div
-          className="top-nav-bar"
-          initial={{ opacity: 0, y: -20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6 }}
-          viewport={{ once: false, amount: 0.3 }}
-        >
-          {/* Navigation Title */}
-          <h1 className="nav-title">ABOUT GENESIS</h1>
-        </motion.div>
-
-        {/* Main Content Box */}
-        <motion.div
-          className="content-box"
-          initial={{ opacity: 0, scale: 0.95 }}
-          whileInView={{ opacity: 1, scale: 1 }}
-          transition={{ duration: 0.8, delay: 0.2 }}
-          viewport={{ once: false, amount: 0.3 }}
-        >
-          <div className="text-container">
-            <p className="about-text">
-              Rev your engines and fasten your seat belts as the GDXR Club
-              kick-starts the Fifth Edition of Genesis - your ticket to an
-              adventure that hits closer to home than ever! Returning after the
-              2025 Last Edition, this 2026 Genesis isn't just about pixels and
-              coding; it's about bringing the spirit of games to life.
-            </p>
-          </div>
-        </motion.div>
-
-        {/* Player Character */}
-        <motion.div
-          className="player-character"
-          initial={{ opacity: 0, x: 50 }}
-          whileInView={{ opacity: 1, x: 0 }}
-          transition={{ duration: 0.8, delay: 0.4 }}
-          viewport={{ once: false, amount: 0.3 }}
-        >
-          <img
-            src="/assets/images/player-character.png"
-            alt="Player"
-            className="player-image"
-          />
-        </motion.div>
+      <section id="about">
+        <AboutPage />
       </section>
 
       {/* Timeline Section */}

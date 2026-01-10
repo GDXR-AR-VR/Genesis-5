@@ -2,7 +2,7 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import { useState } from "react";
 import HomePage from "./components/HomePage";
 import LoadingPage from "./components/LoadingPage";
-import AboutPage from "./pages/AboutPage";
+import CountdownPage from "./pages/CountdownPage";
 import TimelinePage from "./pages/TimelinePage";
 import PrizePoolPage from "./pages/PrizePoolPage";
 import MemoriesPage from "./pages/MemoriesPage";
@@ -22,7 +22,7 @@ function App() {
         ) : (
           <Routes>
             <Route path="/" element={<HomePage />} />
-            <Route path="/about" element={<AboutPage />} />
+            <Route path="/countdown" element={<CountdownPage />} />
             <Route path="/timeline" element={<TimelinePage />} />
             <Route path="/prize-pool" element={<PrizePoolPage />} />
             <Route path="/memories" element={<MemoriesPage />} />
