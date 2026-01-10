@@ -7,22 +7,22 @@ const faqData = {
     {
       question: "What is Genesis?",
       answer:
-        "Genesis is a 48-hour game development hackathon organized by the GDXR Club. It brings together developers, artists, and designers to create amazing games from scratch.",
+        "Genesis is a 24-hour game development hackathon organized by the GDXR Club. It brings together developers, artists, and designers to create amazing games from scratch.",
     },
     {
       question: "When and where is Genesis happening?",
       answer:
-        "Genesis 2026 will be held at the university campus. The exact dates and venue details will be announced soon. Stay tuned to our social media for updates!",
+        "Genesis 5 offline round will be held at the AIT campus. On 14th Feb, 2026. Stay tuned to our social media for more updates!",
     },
     {
       question: "Who can participate in Genesis?",
       answer:
-        "Genesis is open to all students - whether you're a beginner or an experienced developer. Teams can consist of 2-4 members from any educational institution.",
+        "Genesis is open to all students - whether you're a beginner or an experienced developer. Teams can consist of 1-4 members from any educational institution.",
     },
     {
       question: "Is there a registration fee?",
       answer:
-        "Registration details including any fees will be announced on our official website. Early bird registrations may receive special discounts!",
+        "No registration fees !!",
     },
   ],
   technical: [
@@ -58,22 +58,17 @@ const faqData = {
       answer:
         "Games will be judged based on creativity, gameplay, technical execution, art & audio, and theme interpretation by our panel of industry experts.",
     },
-    {
-      question: "Are there any special category prizes?",
-      answer:
-        "Yes! Apart from main prizes, we have special awards for Best First-Time Team, Best Use of Theme, and Audience Choice award.",
-    },
   ],
   logistics: [
     {
       question: "Will food be provided?",
       answer:
-        "Yes, meals and snacks will be provided throughout the 48-hour event. We accommodate dietary restrictions - please mention them during registration.",
+        "Yes, meals and snacks will be provided throughout the 24-hour event. We accommodate dietary restrictions - please mention them during registration.",
     },
     {
       question: "Can I sleep at the venue?",
       answer:
-        "The venue will be open 24/7 during the hackathon. We recommend bringing sleeping bags or blankets if you plan to rest at the venue.",
+        "The venue will be open 24/7 during the hackathon.",
     },
     {
       question: "What should I bring?",

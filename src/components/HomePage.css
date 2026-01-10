@@ -579,3 +579,37 @@
     right: 10px;
   }
 }
+
+/* ========== CIRCULAR TEXT STYLES ========== */
+.circular-text-container {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  z-index: 10;
+}
+
+/* Mobile styles for circular text */
+@media (max-width: 1024px) {
+  .circular-text-container {
+    bottom: 15px;
+    right: 15px;
+    transform: scale(0.6);
+    transform-origin: bottom right;
+  }
+}
+
+@media (max-width: 768px) {
+  .circular-text-container {
+    bottom: 10px;
+    right: 10px;
+    transform: scale(0.5);
+  }
+}
+
+@media (max-width: 480px) {
+  .circular-text-container {
+    bottom: 8px;
+    right: 8px;
+    transform: scale(0.4);
+  }
+}

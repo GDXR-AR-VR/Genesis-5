@@ -66,6 +66,41 @@ export default function Footer() {
           ></iframe>
         </div>
       </motion.div>
+
+      {/* Social Media Section */}
+      <motion.div
+        className="footer-social"
+        initial={{ opacity: 0, y: 30 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.6, delay: 0.4 }}
+        viewport={{ once: false, amount: 0.3 }}
+      >
+        <h2 className="footer-title">Follow Us</h2>
+        <a
+          href="https://www.instagram.com/gdxr_ait/"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="social-link instagram-link"
+        >
+          <img
+            src="/assets/icons/download.png"
+            alt="Instagram"
+            className="social-icon"
+          />
+          Instagram
+        </a>
+      </motion.div>
+
+      {/* Credits Section */}
+      <motion.div
+        className="footer-credits"
+        initial={{ opacity: 0 }}
+        whileInView={{ opacity: 1 }}
+        transition={{ duration: 0.8, delay: 0.6 }}
+        viewport={{ once: false, amount: 0.3 }}
+      >
+        <p className="credits-text">Made with ❤️ by AR-VR Dev Team</p>
+      </motion.div>
     </footer>
   );
 }

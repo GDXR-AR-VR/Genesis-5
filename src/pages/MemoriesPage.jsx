@@ -44,6 +44,15 @@ export default function MemoriesPage() {
           maxVerticalRotationDeg={60}
           segments={24}
           grayscale={false}
+          className="desktop-gallery"
+        />
+        <DomeGallery
+          fit={0.25}
+          minRadius={300}
+          maxVerticalRotationDeg={60}
+          segments={24}
+          grayscale={false}
+          className="mobile-gallery"
         />
       </motion.div>
     </section>

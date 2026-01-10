@@ -10,6 +10,7 @@ import MemoriesPage from "../pages/MemoriesPage";
 import SponsorsPage from "../pages/SponsorsPage";
 import FAQsPage from "../pages/FAQsPage";
 import Footer from "./Footer";
+import CircularText from "./CircularText";
 
 const menuItems = [
   { id: "home", label: "HOME" },
@@ -169,6 +170,20 @@ export default function HomePage() {
               className="menu-icon"
             />
           </button>
+        </motion.div>
+
+        {/* Circular Text - Desktop Right Corner */}
+        <motion.div
+          className="circular-text-container"
+          initial={{ opacity: 0, scale: 0.8 }}
+          animate={{ opacity: 1, scale: 1 }}
+          transition={{ duration: 0.8, delay: 1.5 }}
+        >
+          <CircularText
+            text="  REGISTERATION  OPEN"
+            spinDuration={13}
+            className="custom-class"
+          />
         </motion.div>
 
         {/* Center Content */}

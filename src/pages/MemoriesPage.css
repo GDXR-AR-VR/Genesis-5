@@ -217,18 +217,34 @@
   margin-top: 40px;
 }
 
+.memories-gallery-container .desktop-gallery {
+  display: block;
+}
+
+.memories-gallery-container .mobile-gallery {
+  display: none;
+}
+
 @media (max-width: 768px) {
   .memories-gallery-container {
-    height: 70vh;
-    min-height: 400px;
-    margin-top: 30px;
+    height: 90vh;
+    min-height: 500px;
+    margin-top: 20px;
+  }
+
+  .memories-gallery-container .desktop-gallery {
+    display: none;
+  }
+
+  .memories-gallery-container .mobile-gallery {
+    display: block;
   }
 }
 
 @media (max-width: 480px) {
   .memories-gallery-container {
-    height: 50vh;
-    min-height: 300px;
-    margin-top: 15vh;
+    height: 80vh;
+    min-height: 400px;
+    margin-top: 10vh;
   }
 }

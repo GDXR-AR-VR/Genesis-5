@@ -105,6 +105,28 @@ export default function AboutPage() {
           className="player-image"
         />
       </motion.div>
+
+      {/* Mobile Character */}
+      <motion.div
+        className="mobile-character"
+        initial={{ opacity: 0, scale: 0.8 }}
+        whileInView={{ opacity: 1, scale: 1 }}
+        transition={{
+          duration: 0.6,
+          delay: 0.5,
+          type: "spring",
+          stiffness: 120,
+        }}
+        viewport={{ once: false, amount: 0.3 }}
+        whileHover={{ scale: 1.1, rotate: -3 }}
+        whileTap={{ scale: 0.9 }}
+      >
+        <img
+          src="/assets/images/ch.png"
+          alt="Character"
+          className="mobile-character-image"
+        />
+      </motion.div>
     </section>
   );
 }
