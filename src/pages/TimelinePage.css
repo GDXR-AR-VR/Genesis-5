@@ -28,7 +28,18 @@
 .timeline-desktop {
   display: block;
 }
-
+/* Track Rail Image */
+.track-rail-image {
+  position: absolute;
+  top: 12%;
+  left: 49%;
+  transform: translate(-50%, -50%);
+  width: 59px; /* Adjust size as needed */
+  height: auto;
+  z-index: 2;
+  pointer-events: none;
+  display: none;
+}
 /* Cloud Transition Effects */
 .cloud-transition {
   position: absolute;
@@ -115,6 +126,14 @@
     display: block;
   }
 
+  .track-rail-image {
+    display: block;
+    top: 5px;
+    left: 43%;
+    transform: translateX(-50%);
+    width: 90px;
+  }
+
   .timeline-image {
     width: 100%;
     height: 100vh;
@@ -159,6 +178,11 @@
 @media (max-width: 480px) {
   .cloud-transition {
     width: 120px;
+  }
+
+  .track-rail-image {
+    top: 0;
+    width: 40px;
   }
 
   .cloud-1 {

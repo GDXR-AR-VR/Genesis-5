@@ -1,10 +1,14 @@
-import React from "react";
-import { motion } from "framer-motion";
+import React, { useRef } from "react";
+import { motion, useInView } from "framer-motion";
 import "./TimelinePage.css";
 
 const TimelinePage = () => {
+  const ref = useRef(null);
+  const isInView = useInView(ref, { once: false, amount: 0.2 });
+
   return (
     <motion.div
+      ref={ref}
       className="timeline-page"
       initial={{ opacity: 0 }}
       whileInView={{ opacity: 1 }}
@@ -79,6 +83,17 @@ const TimelinePage = () => {
         src="/assets/timelinephone.png"
         alt="Timeline"
         className="timeline-image timeline-mobile"
+      />
+      <motion.img
+        src="/assets/images/Group 1000012550.png"
+        alt="Track Rail"
+        className="track-rail-image"
+        animate={isInView ? "animate" : "initial"}
+        variants={{
+          initial: { y: 0 },
+          animate: { y: "90vh" }
+        }}
+        transition={{ duration: 8, ease: "linear" }}
       />
     </motion.div>
   );
