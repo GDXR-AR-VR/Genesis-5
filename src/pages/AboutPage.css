@@ -238,8 +238,8 @@
 }
 
 .mobile-character-image {
-  width: 150px;
-  height: 150px;
+  width: 200px;
+  height: 300px;
   object-fit: contain;
   image-rendering: pixelated;
   image-rendering: -webkit-optimize-contrast;
