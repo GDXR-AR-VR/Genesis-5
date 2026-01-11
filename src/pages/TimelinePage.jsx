@@ -91,7 +91,7 @@ const TimelinePage = () => {
         animate={isInView ? "animate" : "initial"}
         variants={{
           initial: { y: 0 },
-          animate: { y: "90vh" }
+          animate: { y: "90vh" },
         }}
         transition={{ duration: 8, ease: "linear" }}
       />
