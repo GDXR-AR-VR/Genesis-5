@@ -21,8 +21,7 @@ export default function PrizePoolPage() {
     "https://www.figma.com/api/mcp/asset/6eeac0e4-7018-45d8-ac17-b4356bde3070";
   const imgBlockOfDiamond28Texture29Je4Be31 =
     "https://www.figma.com/api/mcp/asset/fe20f632-90d1-498c-a0ed-b90007fa31d9";
-  const imgGroup1000012447 =
-    "https://www.figma.com/api/mcp/asset/213679b4-b537-4c84-b501-ba0d245c494c";
+  const imgGroup1000012447 = "/assets/Group 1000012493.png";
 
   return (
     <section className="prize-pool-page">
