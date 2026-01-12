@@ -163,7 +163,7 @@
   position: absolute;
   top: 124px;
   left: 109px;
-  width: 1222px;
+  width: 900px;
   height: 590px;
   background: #c6c6c6;
   border: 2px solid #000;
@@ -198,7 +198,7 @@
 
 .about-text {
   font-family: "Minecraftia", "Press Start 2P", monospace;
-  font-size: 38px;
+  font-size: 33px;
   font-weight: 400;
   line-height: 1.4;
   color: #000;
