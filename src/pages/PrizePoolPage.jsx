@@ -4,17 +4,17 @@ import "./PrizePoolPage.css";
 export default function PrizePoolPage() {
   // Figma image assets
   const imgC55Fd304E31Eedca4521C551C0D499601 =
-    "https://www.figma.com/api/mcp/asset/90039f8d-d5ef-42c4-a8bd-cdba2ebc5969";
+    "/assets/gold.png";
   const imgD1641B7A333147Fc2984Ad5D09Dda7951 =
-    "https://www.figma.com/api/mcp/asset/f89226cc-dc55-43e9-ba2e-0b8af4ec5016";
+    "/assets/silver.png";
   const img5176357Efef6D35201F9A7Ff45655Bb21 =
-    "https://www.figma.com/api/mcp/asset/b8548d55-96d4-46ec-8ade-617318945348";
+    "/assets/bronze.png";
   const img148E55193F6Ab08E8Bfbe72C0F24Aa231 =
-    "https://www.figma.com/api/mcp/asset/2cdae587-20f4-48f8-8e2a-2b4ad089de6d";
+    "/assets/plat.png";
   const img527D90Bfea8C2Adcbc88Ebacc807303B1 =
-    "https://www.figma.com/api/mcp/asset/527b4aa3-56ee-41e3-b573-169f3bdefece";
+    "/assets/platblue.png";
   const imgImage5 =
-    "https://www.figma.com/api/mcp/asset/1db500d1-2704-4300-a4a8-ea55122b424f";
+    "/assets/image 5.png";
   const imgBlockOfEmerald28Texture29Je4Be31 =
     "https://www.figma.com/api/mcp/asset/ee8c1ca5-b36e-4201-90f1-2cb22190f3a8";
   const imgBlockOfGold28Texture29Je5Be31 =
@@ -67,7 +67,7 @@ export default function PrizePoolPage() {
               alt="1st prize icon"
               className="prize-icon"
             />
-            <div className="prize-amount">17500</div>
+            <div className="prize-amount">₹ 17500</div>
           </div>
         </motion.div>
 
@@ -90,7 +90,7 @@ export default function PrizePoolPage() {
               alt="2nd prize icon"
               className="prize-icon"
             />
-            <div className="prize-amount">15000</div>
+            <div className="prize-amount">₹ 15000</div>
           </div>
         </motion.div>
 
@@ -113,7 +113,7 @@ export default function PrizePoolPage() {
               alt="3rd prize icon"
               className="prize-icon"
             />
-            <div className="prize-amount">12500</div>
+            <div className="prize-amount">₹ 12500</div>
           </div>
         </motion.div>
       </div>
@@ -156,7 +156,7 @@ export default function PrizePoolPage() {
               alt="VR 1st prize icon"
               className="prize-icon"
             />
-            <div className="prize-amount">10000</div>
+            <div className="prize-amount">₹ 10000</div>
           </div>
         </motion.div>
 
@@ -179,7 +179,7 @@ export default function PrizePoolPage() {
               alt="VR 2nd prize icon"
               className="prize-icon"
             />
-            <div className="prize-amount">5000</div>
+            <div className="prize-amount">₹ 5000</div>
           </div>
         </motion.div>
       </div>
