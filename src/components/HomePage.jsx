@@ -180,7 +180,7 @@ export default function HomePage() {
           transition={{ duration: 0.8, delay: 1.5 }}
         >
           <CircularText
-            text="  REGISTERATION  OPEN"
+            text="  REGISTRATION  CLOSE"
             spinDuration={13}
             className="custom-class"
           />
