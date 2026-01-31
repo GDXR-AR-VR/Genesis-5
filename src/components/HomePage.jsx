@@ -29,7 +29,7 @@ export default function HomePage() {
   const handleRegister = () => {
     window.open(
       "https://unstop.com/events/genesis-5-punes-largest-game-jam-army-institute-of-technology-ait-pune-1584494?lb=XXQIl8jQ&utm_medium=Share&utm_source=pankacha9021&utm_campaign=Online_coding_challenge",
-      "_blank"
+      "_blank",
     );
   };
 
