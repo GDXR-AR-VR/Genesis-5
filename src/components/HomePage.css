@@ -310,6 +310,10 @@
 /* Register Button */
 .register-section {
   margin-top: 60px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0;
 }
 
 .register-button {
@@ -349,6 +353,90 @@
   max-width: 350px;
   image-rendering: -webkit-optimize-contrast;
   image-rendering: crisp-edges;
+}
+
+/* Registration Soon Badge */
+.registration-soon-badge {
+  display: inline-block;
+  padding: 14px 36px;
+  font-family: "Cinzel", "Georgia", serif;
+  font-size: 1.15rem;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: #f5d98b;
+  background: rgba(10, 5, 25, 0.55);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1.5px solid rgba(245, 217, 139, 0.5);
+  border-radius: 4px;
+  box-shadow:
+    0 0 18px rgba(245, 180, 60, 0.25),
+    0 4px 24px rgba(0, 0, 0, 0.5),
+    inset 0 0 12px rgba(245, 180, 60, 0.06);
+  animation: badgeGlow 2.5s ease-in-out infinite alternate;
+  cursor: default;
+  user-select: none;
+  margin-top: 4px;
+}
+
+@keyframes badgeGlow {
+  from {
+    box-shadow:
+      0 0 14px rgba(245, 180, 60, 0.2),
+      0 4px 24px rgba(0, 0, 0, 0.5),
+      inset 0 0 10px rgba(245, 180, 60, 0.04);
+    border-color: rgba(245, 217, 139, 0.4);
+  }
+  to {
+    box-shadow:
+      0 0 30px rgba(245, 180, 60, 0.45),
+      0 4px 28px rgba(0, 0, 0, 0.6),
+      inset 0 0 18px rgba(245, 180, 60, 0.12);
+    border-color: rgba(245, 217, 139, 0.8);
+  }
+}
+
+/* Brochure Button */
+.brochure-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 18px;
+  padding: 11px 30px;
+  font-family: "Cinzel", "Georgia", serif;
+  font-size: 0.95rem;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #e8c96a;
+  background: rgba(10, 5, 25, 0.45);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  border: 1px solid rgba(245, 200, 80, 0.4);
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 14px rgba(0, 0, 0, 0.4);
+}
+
+.brochure-button:hover {
+  background: rgba(245, 180, 60, 0.12);
+  border-color: rgba(245, 200, 80, 0.85);
+  color: #fdeea0;
+  transform: translateY(-2px);
+  box-shadow:
+    0 0 20px rgba(245, 180, 60, 0.35),
+    0 6px 20px rgba(0, 0, 0, 0.5);
+}
+
+.brochure-button:active {
+  transform: translateY(0px) scale(0.97);
+}
+
+.brochure-icon {
+  font-size: 1.1rem;
+  line-height: 1;
 }
 
 /* Bottom Event Label */

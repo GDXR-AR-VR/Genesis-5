@@ -28,8 +28,8 @@ export default function HomePage() {
 
   const handleRegister = () => {
     window.open(
-      "https://unstop.com/events/genesis-5-punes-largest-game-jam-army-institute-of-technology-ait-pune-1584494?lb=XXQIl8jQ&utm_medium=Share&utm_source=pankacha9021&utm_campaign=Online_coding_challenge",
-      "_blank",
+      // "https://unstop.com/events/genesis-5-punes-largest-game-jam-army-institute-of-technology-ait-pune-1584494?lb=XXQIl8jQ&utm_medium=Share&utm_source=pankacha9021&utm_campaign=Online_coding_challenge",
+      // "_blank",
     );
   };
 
@@ -180,7 +180,7 @@ export default function HomePage() {
           transition={{ duration: 0.8, delay: 1.5 }}
         >
           <CircularText
-            text="  REGISTRATION  CLOSE"
+            text="  Online Round will be on 09 Feb, 2027 !!"
             spinDuration={13}
             className="custom-class"
           />
@@ -209,12 +209,15 @@ export default function HomePage() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 1.1 }}
           >
-            <button className="register-button" onClick={handleRegister}>
-              <img
-                src="/assets/icons/Group 1000012482.svg"
-                alt="Register Now"
-                className="main-logo"
-              />
+            <div className="registration-soon-badge">
+                Registration will begin soon
+              </div>
+            <button
+              className="brochure-button"
+              onClick={() => window.open("/GENESIS_6_BROCHURE_.pdf", "_blank")}
+            >
+              <span className="brochure-icon">📄</span>
+              View Brochure
             </button>
           </motion.div>
         </div>

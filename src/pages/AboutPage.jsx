@@ -76,9 +76,9 @@ export default function AboutPage() {
             viewport={{ once: false, amount: 0.3 }}
           >
             Rev your engines and fasten your seat belts as the GDXR Club
-            kick-starts the Fifth Edition of Genesis - your ticket to an
+            kick-starts the Sixth Edition of Genesis - your ticket to an
             adventure that hits closer to home than ever! Returning after the
-            2025 Last Edition, this 2026 Genesis isn't just about pixels and
+            2026 Last Edition, this 2027 Genesis isn't just about pixels and
             coding; it's about bringing the spirit of games to life.
           </motion.p>
         </div>

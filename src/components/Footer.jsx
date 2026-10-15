@@ -30,16 +30,16 @@ export default function Footer() {
         <h2 className="footer-title">Contact Us</h2>
 
         <div className="contact-person">
-          <h3 className="contact-name">Abhinav S</h3>
-          <a href="tel:+919778052399" className="contact-phone">
-            +91 9778052399
+          <h3 className="contact-name">Apoorva Sharma</h3>
+          <a href="tel:+918851065577" className="contact-phone">
+            +91 8851065577
           </a>
         </div>
 
         <div className="contact-person">
-          <h3 className="contact-name">Aradhana Kumari</h3>
-          <a href="tel:+917050262224" className="contact-phone">
-            +91 70502 62224
+          <h3 className="contact-name">Anjali Gharadwal</h3>
+          <a href="tel:+919253356424" className="contact-phone">
+            +91 9253356424
           </a>
         </div>
       </motion.div>
